@@ -7,12 +7,6 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-accent/5 via-transparent to-transparent pointer-events-none" />
 
       <div className="relative mx-auto max-w-5xl text-center">
-        {/* Badge */}
-        <div className="animate-fade-in inline-flex items-center gap-2 px-4 py-1.5 mb-8 rounded-full border border-border bg-bg-surface text-xs text-text-secondary">
-          <span className="w-1.5 h-1.5 rounded-full bg-green-400" />
-          Built on VS Code &middot; Full Extension Support
-        </div>
-
         {/* Headline */}
         <h1 className="animate-fade-in animate-delay-100 text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.1] text-text-primary mb-6">
           The AI-native
@@ -30,7 +24,9 @@ export default function Hero() {
         {/* CTAs */}
         <div className="animate-fade-in animate-delay-300 flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
           <a
-            href="#download"
+            href="https://github.com/BrandonHowe/cs485-llm-ide/releases"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 px-7 py-3.5 text-sm font-medium rounded-full bg-accent text-white hover:bg-accent/90 transition-colors"
           >
             <svg

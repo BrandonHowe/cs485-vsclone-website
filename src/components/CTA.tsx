@@ -17,7 +17,9 @@ export default function CTA() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="#"
+            href="https://github.com/BrandonHowe/cs485-llm-ide/releases"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 px-8 py-4 text-sm font-medium rounded-full bg-accent text-white hover:bg-accent/90 transition-colors"
           >
             <svg
@@ -34,7 +36,9 @@ export default function CTA() {
             Download for macOS
           </a>
           <a
-            href="#"
+            href="https://github.com/BrandonHowe/cs485-llm-ide"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 px-8 py-4 text-sm font-medium rounded-full border border-border text-text-secondary hover:text-text-primary hover:border-border-hover transition-colors"
           >
             <svg

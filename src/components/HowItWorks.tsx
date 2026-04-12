@@ -70,9 +70,6 @@ export default function HowItWorks() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
-          {/* Connector line (desktop only) */}
-          <div className="hidden md:block absolute top-16 left-[12.5%] right-[12.5%] h-px bg-gradient-to-r from-accent/40 via-accent-secondary/40 to-accent/40" />
-
           {steps.map((step, i) => (
             <StepCard key={step.number} step={step} index={i} />
           ))}

@@ -11,8 +11,8 @@ export default function Footer() {
             <ul className="space-y-2.5">
               <FooterLink href="#features">Features</FooterLink>
               <FooterLink href="#how-it-works">How It Works</FooterLink>
-              <FooterLink href="#download">Download</FooterLink>
-              <FooterLink href="#">Changelog</FooterLink>
+              <FooterLink href="https://github.com/BrandonHowe/cs485-llm-ide/releases">Download</FooterLink>
+              <FooterLink href="https://github.com/BrandonHowe/cs485-llm-ide/commits/main">Changelog</FooterLink>
             </ul>
           </div>
 
@@ -35,10 +35,10 @@ export default function Footer() {
               Resources
             </h4>
             <ul className="space-y-2.5">
-              <FooterLink href="#">Documentation</FooterLink>
-              <FooterLink href="#">GitHub</FooterLink>
-              <FooterLink href="#">Community</FooterLink>
-              <FooterLink href="#">Blog</FooterLink>
+              <FooterLink href="https://github.com/BrandonHowe/cs485-llm-ide#readme">Documentation</FooterLink>
+              <FooterLink href="https://github.com/BrandonHowe/cs485-llm-ide">GitHub</FooterLink>
+              <FooterLink href="https://github.com/BrandonHowe/cs485-llm-ide/issues">Issues</FooterLink>
+              <FooterLink href="https://github.com/BrandonHowe/cs485-llm-ide/pulls">Pull Requests</FooterLink>
             </ul>
           </div>
 
@@ -48,10 +48,10 @@ export default function Footer() {
               Project
             </h4>
             <ul className="space-y-2.5">
-              <FooterLink href="#">About</FooterLink>
-              <FooterLink href="#">Contributing</FooterLink>
-              <FooterLink href="#">License</FooterLink>
-              <FooterLink href="#">Privacy</FooterLink>
+              <FooterLink href="https://github.com/BrandonHowe/cs485-llm-ide#readme">About</FooterLink>
+              <FooterLink href="https://github.com/BrandonHowe/cs485-llm-ide/blob/main/CONTRIBUTING.md">Contributing</FooterLink>
+              <FooterLink href="https://github.com/BrandonHowe/cs485-llm-ide/blob/main/LICENSE">License</FooterLink>
+              <FooterLink href="https://github.com/BrandonHowe/cs485-llm-ide/graphs/contributors">Contributors</FooterLink>
             </ul>
           </div>
         </div>

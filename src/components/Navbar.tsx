@@ -53,24 +53,22 @@ export default function Navbar() {
           >
             How It Works
           </a>
-          <a
-            href="#testimonials"
-            className="text-sm text-text-secondary hover:text-text-primary transition-colors"
-          >
-            Testimonials
-          </a>
         </div>
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="#"
+            href="https://github.com/BrandonHowe/cs485-llm-ide"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm text-text-secondary hover:text-text-primary transition-colors"
           >
             GitHub
           </a>
           <a
-            href="#download"
+            href="https://github.com/BrandonHowe/cs485-llm-ide/releases"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-5 py-2 text-sm font-medium rounded-full bg-accent text-white hover:bg-accent/90 transition-colors"
           >
             Download
@@ -128,7 +126,9 @@ export default function Navbar() {
             Testimonials
           </a>
           <a
-            href="#download"
+            href="https://github.com/BrandonHowe/cs485-llm-ide/releases"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-5 py-2 text-sm font-medium rounded-full bg-accent text-white text-center"
             onClick={() => setMobileOpen(false)}
           >
