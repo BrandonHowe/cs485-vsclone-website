@@ -1,3 +1,5 @@
+import { AlternatePlatformLink, PrimaryDownloadButton } from "./downloads";
+
 export default function CTA() {
   return (
     <section id="download" className="py-24 px-6 relative overflow-hidden">
@@ -15,46 +17,31 @@ export default function CTA() {
           and experience AI-native development.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="https://github.com/BrandonHowe/cs485-llm-ide/releases/download/v0.0.1/VSCode-darwin-arm64.dmg"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-8 py-4 text-sm font-medium rounded-full bg-accent text-white hover:bg-accent/90 transition-colors"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
+        <div className="flex flex-col items-center gap-3">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <PrimaryDownloadButton className="flex items-center gap-2 px-8 py-4 text-sm font-medium rounded-full bg-accent text-white hover:bg-accent/90 transition-colors" />
+            <a
+              href="https://github.com/BrandonHowe/cs485-llm-ide"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-8 py-4 text-sm font-medium rounded-full border border-border text-text-secondary hover:text-text-primary hover:border-border-hover transition-colors"
             >
-              <path d="M8 2v9M4 8l4 4 4-4M3 14h10" />
-            </svg>
-            Download for macOS
-          </a>
-          <a
-            href="https://github.com/BrandonHowe/cs485-llm-ide"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-8 py-4 text-sm font-medium rounded-full border border-border text-text-secondary hover:text-text-primary hover:border-border-hover transition-colors"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
-            </svg>
-            View on GitHub
-          </a>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+              </svg>
+              View on GitHub
+            </a>
+          </div>
+          <AlternatePlatformLink className="text-xs text-text-tertiary hover:text-text-secondary transition-colors" />
         </div>
       </div>
     </section>

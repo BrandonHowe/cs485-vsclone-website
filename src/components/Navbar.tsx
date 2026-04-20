@@ -1,9 +1,22 @@
 "use client";
 
 import { useState } from "react";
+import {
+  DOWNLOAD_URL_MAC,
+  DOWNLOAD_URL_WINDOWS,
+  useDetectedOS,
+} from "./downloads";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const detectedOS = useDetectedOS();
+  // Desktop nav only has room for one Download button; bias it to whatever
+  // OS we detected. Mobile menu lists both explicitly so the non-detected
+  // platform is never hidden away.
+  const desktopDownloadHref =
+    detectedOS === "windows" ? DOWNLOAD_URL_WINDOWS : DOWNLOAD_URL_MAC;
+  const desktopDownloadLabel =
+    detectedOS === "windows" ? "Download for Windows" : "Download for macOS";
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full backdrop-blur-md bg-bg/80 border-b border-border">
@@ -66,12 +79,12 @@ export default function Navbar() {
             GitHub
           </a>
           <a
-            href="https://github.com/BrandonHowe/cs485-llm-ide/releases/download/v0.0.1/VSCode-darwin-arm64.dmg"
+            href={desktopDownloadHref}
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2 text-sm font-medium rounded-full bg-accent text-white hover:bg-accent/90 transition-colors"
           >
-            Download
+            {desktopDownloadLabel}
           </a>
         </div>
 
@@ -126,13 +139,22 @@ export default function Navbar() {
             Testimonials
           </a>
           <a
-            href="https://github.com/BrandonHowe/cs485-llm-ide/releases/download/v0.0.1/VSCode-darwin-arm64.dmg"
+            href={DOWNLOAD_URL_MAC}
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2 text-sm font-medium rounded-full bg-accent text-white text-center"
             onClick={() => setMobileOpen(false)}
           >
-            Download
+            Download for macOS
+          </a>
+          <a
+            href={DOWNLOAD_URL_WINDOWS}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2 text-sm font-medium rounded-full border border-border text-text-secondary hover:text-text-primary text-center"
+            onClick={() => setMobileOpen(false)}
+          >
+            Download for Windows
           </a>
         </div>
       )}

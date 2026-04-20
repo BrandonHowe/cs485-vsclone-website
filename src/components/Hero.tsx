@@ -1,4 +1,5 @@
 import EditorMockup from "./EditorMockup";
+import { AlternatePlatformLink, PrimaryDownloadButton } from "./downloads";
 
 export default function Hero() {
   return (
@@ -22,32 +23,17 @@ export default function Hero() {
         </p>
 
         {/* CTAs */}
-        <div className="animate-fade-in animate-delay-300 flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-          <a
-            href="https://github.com/BrandonHowe/cs485-llm-ide/releases/download/v0.0.1/VSCode-darwin-arm64.dmg"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-7 py-3.5 text-sm font-medium rounded-full bg-accent text-white hover:bg-accent/90 transition-colors"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
+        <div className="animate-fade-in animate-delay-300 flex flex-col items-center gap-3 mb-16">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <PrimaryDownloadButton className="flex items-center gap-2 px-7 py-3.5 text-sm font-medium rounded-full bg-accent text-white hover:bg-accent/90 transition-colors" />
+            <a
+              href="#features"
+              className="px-7 py-3.5 text-sm font-medium rounded-full border border-border text-text-secondary hover:text-text-primary hover:border-border-hover transition-colors"
             >
-              <path d="M8 2v9M4 8l4 4 4-4M3 14h10" />
-            </svg>
-            Download for macOS
-          </a>
-          <a
-            href="#features"
-            className="px-7 py-3.5 text-sm font-medium rounded-full border border-border text-text-secondary hover:text-text-primary hover:border-border-hover transition-colors"
-          >
-            Learn More
-          </a>
+              Learn More
+            </a>
+          </div>
+          <AlternatePlatformLink className="text-xs text-text-tertiary hover:text-text-secondary transition-colors" />
         </div>
 
         {/* Editor mockup */}
