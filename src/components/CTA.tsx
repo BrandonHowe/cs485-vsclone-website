@@ -17,7 +17,7 @@ export default function CTA() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="https://github.com/BrandonHowe/cs485-llm-ide/releases"
+            href="https://github.com/BrandonHowe/cs485-llm-ide/releases/download/v0.0.1/VSCode-darwin-arm64.dmg"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-8 py-4 text-sm font-medium rounded-full bg-accent text-white hover:bg-accent/90 transition-colors"

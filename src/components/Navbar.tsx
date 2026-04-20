@@ -66,7 +66,7 @@ export default function Navbar() {
             GitHub
           </a>
           <a
-            href="https://github.com/BrandonHowe/cs485-llm-ide/releases"
+            href="https://github.com/BrandonHowe/cs485-llm-ide/releases/download/v0.0.1/VSCode-darwin-arm64.dmg"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2 text-sm font-medium rounded-full bg-accent text-white hover:bg-accent/90 transition-colors"
@@ -126,7 +126,7 @@ export default function Navbar() {
             Testimonials
           </a>
           <a
-            href="https://github.com/BrandonHowe/cs485-llm-ide/releases"
+            href="https://github.com/BrandonHowe/cs485-llm-ide/releases/download/v0.0.1/VSCode-darwin-arm64.dmg"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2 text-sm font-medium rounded-full bg-accent text-white text-center"

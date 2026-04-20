@@ -11,7 +11,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               <FooterLink href="#features">Features</FooterLink>
               <FooterLink href="#how-it-works">How It Works</FooterLink>
-              <FooterLink href="https://github.com/BrandonHowe/cs485-llm-ide/releases">Download</FooterLink>
+              <FooterLink href="https://github.com/BrandonHowe/cs485-llm-ide/releases/download/v0.0.1/VSCode-darwin-arm64.dmg">Download</FooterLink>
               <FooterLink href="https://github.com/BrandonHowe/cs485-llm-ide/commits/main">Changelog</FooterLink>
             </ul>
           </div>
